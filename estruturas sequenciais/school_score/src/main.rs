@@ -16,7 +16,7 @@ fn main() {
 
     println!("Digite o primeiro valor: ");
     io::stdin().read_line(&mut input).expect(input_error_msg);
-    value += input.trim().parse::<f64>().expect(parse_error_msg); //converte a string em inteiros de 32bits
+    value += input.trim().parse::<f64>().expect(parse_error_msg); //converte a string em float
     input.clear(); //limpa o valor de entrada digitado previamente
 
     println!("Digite o segundo valor: ");
